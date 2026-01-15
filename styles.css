@@ -1,0 +1,332 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* END OF RESET CSS, START HEADER */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+.hero {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url(Zhang-Yiwei-CGI-women-short-hair-purple-hair-blue-eyes-2185487-wallhere\ 1.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 60px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.box {
+    width: 150px;
+    height: 52px;
+    background-color: #FFF;
+}
+
+.abot-us {
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  position: relative;
+  padding-bottom: 8px; /* Gap between text and line */
+  display: inline-block; /* Ensures padding/width works correctly */
+}
+
+/* The permanent line */
+.abot-us::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;       /* Set to 100% so it's always there */
+  height: 3px;       /* Thickness of the line */
+  background-color: white;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-links li {
+    font-weight: 700;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* HERO CONTENT */
+.hero-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+}
+
+.hero-content h1 {
+  font-size: clamp(32px, 5vw, 56px);
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+
+.hero-content p {
+  font-size: 16px;
+  opacity: 0.85;
+  margin-bottom: 35px;
+}
+
+/* BUTTONS */
+.buttons {
+  display: flex;
+  gap: 42px;
+}
+
+.btn {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    font-size: 14px;
+  font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+}
+
+.primary {
+  background: #7c2ae8;
+  color: #fff;
+  width: 220px;
+  height: 48px;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.xbrv-orbit-nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.xbrv-logo-img {
+  height: 34px;
+}
+.xbrv-hyper-links{
+    gap: 25px;
+}
+
+.xbrv-hyper-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.xbrv-auth-btn {
+  background: white;
+  color: black;
+  border: none;
+  padding: 8px 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.secondary {
+  background: #fff;
+  color: #000;
+  width: 194px;
+  height: 48px;
+  font-weight: bold;
+}
+
+
+/* main */
+
+.gap {
+    height: 100px;
+}
+
+.gapy {
+    width: 100%;
+    height: 176px;
+    
+}
+
+.texty {
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.images {
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+.secdiv {
+    height: 656px;
+    background-color: #000000;
+    border-radius: 8px;
+}
+
+.p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    display: flex;
+    justify-content: center;
+}
+
+.border {
+    width: 386px;
+    height: 537px;
+    opacity: 1;
+    border: 2px solid #E15CF2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}   
+
+.cont {
+    margin-top: 119px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.t1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 16px;
+}
+
+.t2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 64px;
+    text-align: center;
+    width: 275px;
+}
+
+.secx {
+  height: 100px;
+  color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+main {
+  background: linear-gradient(to bottom,  #0a0a0a, #160066);
+}
