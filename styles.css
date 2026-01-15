@@ -327,6 +327,353 @@ body {
   width: 100%;
 }
 
-main {
-  background: linear-gradient(to bottom,  #0a0a0a, #160066);
+
+/* ----------------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #0f1024, #050511);
+  color: #fff;
+  text-align: center;
+}
+
+.section {
+  padding: 80px 60px;
+}
+
+.section-title {
+  margin-bottom: 50px;
+  font-family: "Montserrat", sans-serif;
+font-weight: 700;
+font-style: Bold;
+font-size: 24px;
+line-height: 100%;
+letter-spacing: 0%;
+
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.implant-card {
+  padding: 180px 25px;
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(4px);
+}
+
+.implant-card img {
+  width: 283px;
+  height: 246px;
+  margin-bottom: 25px;
+}
+
+.implant-card h3 {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.implant-card p {
+  font-size: 12px;
+  opacity: 0.8;
+  line-height: 1.5;
+}
+
+/* Borders */
+.pink .implant-card {
+  border: 1px solid #d946ef;
+}
+
+.blue .implant-card {
+  border: 1px solid #4f7cff;
+}
+
+/* Carousel */
+.carousel {
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  font-size: 28px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.arrow.left {
+  left: -40px;
+}
+
+.arrow.right {
+  right: -40px;
+}
+
+/* Dots */
+.dots {
+  margin-top: 30px;
+}
+
+.dots span {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: #555;
+  border-radius: 50%;
+  margin: 0 6px;
+}
+
+.dots .active {
+  background: #fff;
+}
+
+.bottom {
+  padding-bottom: 60px;
+}
+
+.boom {
+  font-family: "Montserrat", sans-serif;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+
+}
+
+
+.glam {
+  font-family: "Montserrat", sans-serif;
+font-weight: 700;
+font-style: Bold;
+font-size: 18px;
+line-height: 100%;
+letter-spacing: 0%;
+
+}
+
+
+
+/* ------------------------------------- */
+
+/* ABOUT SECTION */
+.about-section {
+  padding: 200px 80px;
+  background: url(artwork-glasses-glowing-cyberpunk-Cyberpunk-2077-looking-at-viewer-1897613-wallhere\ 1\ \(1\).png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  flex-direction: row-reverse;
+}
+
+.about-image img {
+  width: 420px;
+}
+
+.about-text {
+  max-width: 420px;
+}
+
+.about-text p {
+  font-size: 13px;
+  line-height: 1.8;
+  opacity: 0.85;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.about-btn {
+  display: inline-block;
+  padding: 12px 26px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  background-color: #5604AD;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+font-weight: 700;
+font-style: Bold;
+font-size: 18px;
+line-height: 100%;
+letter-spacing: 0%;
+
+}
+
+/* TEAM SECTION */
+.team-section {
+  padding: 100px 60px;
+  background: radial-gradient(circle at top, #0f1024, #090A26);
+  text-align: center;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.team-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.team-card h4 {
+  font-size: 11px;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.team-card span {
+  font-size: 11px;
+  opacity: 0.6;
+}
+
+
+.tra {
+  font-family: "Montserrat", sans-serif;
+font-weight: 700;
+font-style: Bold;
+font-size: 144px;
+letter-spacing: 0%;
+text-align: center;
+
+}
+
+.tram {
+  font-family: "Montserrat", sans-serif;
+font-weight: 700;
+font-style: Bold;
+font-size: 36px;
+line-height: 100%;
+letter-spacing: 0%;
+
+}
+
+.tr {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+
+}
+
+.footer {
+  background: linear-gradient(135deg, #050714, #0b0f2a);
+  color: #bfc4ff;
+  padding: 60px 80px 30px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.footer-brand {
+  max-width: 400px;
+}
+
+.logo {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.socials a {
+  display: inline-block;
+  margin-right: 12px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 80px;
+}
+
+.footer-links h4 {
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.footer-links a {
+  display: block;
+  color: #bfc4ff;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 0, 221, 0.541);
+  margin-top: 40px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.bottom-links a {
+  margin-left: 20px;
+  color: #bfc4ff;
+  text-decoration: none;
+}
+
+.OOO {
+  font-family: "Montserrat", sans-serif;
+font-weight: 400;
+font-style: Regular;
+font-size: 12px;
+line-height: 100%;
+letter-spacing: 0%;
+
+}
+
+.bruh {
+  font-family: "Montserrat", sans-serif;
+font-weight: 400;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0%;
+
+}
+
+.wam {
+  font-family: "Montserrat", sans-serif;
+font-weight: 700;
+
+font-style: Bold;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+
 }
