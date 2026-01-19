@@ -530,7 +530,7 @@ letter-spacing: 0%;
 
 .team-card img {
   width: 100%;
-  height: 260px;
+  height: 327px;
   object-fit: cover;
   margin-bottom: 20px;
 }
@@ -676,4 +676,655 @@ font-size: 16px;
 line-height: 100%;
 letter-spacing: 0%;
 
+}
+
+
+/* =========================
+   RESPONSIVE STYLES
+========================= */
+
+/* Large Desktop (> 1024px) */
+@media (min-width: 1025px) {
+  .nav {
+    padding: 20px 60px;
+  }
+
+  .section {
+    padding: 80px 60px;
+  }
+
+  .about-section {
+    padding: 200px 80px;
+  }
+
+  .footer {
+    padding: 60px 80px 30px;
+  }
+}
+
+/* Tablets (≤ 1024px) */
+@media (max-width: 1024px) {
+  .nav {
+    padding: 20px 40px;
+  }
+
+  .xbrv-hyper-links {
+    gap: 15px;
+    font-size: 14px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(28px, 4vw, 52px);
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .buttons {
+    gap: 20px;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .implant-card {
+    padding: 120px 20px;
+  }
+
+  .implant-card img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+
+  .about-section {
+    padding: 120px 40px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-links {
+    gap: 60px;
+  }
+
+  .section {
+    padding: 60px 40px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .tra {
+    font-size: 72px;
+  }
+
+  .tram {
+    font-size: 28px;
+  }
+
+  .void-link-galaxy {
+    gap: 60px;
+    margin-right: 0;
+  }
+}
+
+/* Tablets Small (≤ 900px) */
+@media (max-width: 900px) {
+  .images {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .images img {
+    max-width: 120px;
+    height: auto;
+  }
+}
+
+/* Mobile (≤ 768px) */
+@media (max-width: 768px) {
+  /* NAV */
+  .nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+    align-items: stretch;
+  }
+
+  .logo img {
+    max-width: 120px;
+    height: auto;
+  }
+
+  .xbrv-hyper-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    font-size: 13px;
+  }
+
+  .xbrv-hyper-links a {
+    margin: 0 8px;
+    white-space: nowrap;
+  }
+
+  .xbrv-hyper-links img {
+    max-width: 20px;
+    height: auto;
+  }
+
+  .xbrv-auth-zone {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .xbrv-auth-btn {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  /* HERO */
+  .hero-content h1 {
+    font-size: clamp(24px, 6vw, 40px);
+    line-height: 1.3;
+    margin-bottom: 15px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+    align-self: center;
+  }
+
+  .primary, .secondary {
+    width: 100% !important;
+  }
+
+  /* GAP */
+  .gap {
+    height: 100px;
+  }
+
+  .gapy {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .texty {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  /* PARTNERS */
+  .images {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .images img {
+    max-width: 100px;
+    height: auto;
+  }
+
+  /* SECTIONS */
+  .section {
+    padding: 50px 20px;
+  }
+
+  .section-title {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .implant-card {
+    padding: 60px 20px;
+  }
+
+  .implant-card img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .implant-card h3 {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  .implant-card p {
+    font-size: 11px;
+  }
+
+  .glam {
+    font-size: 14px;
+  }
+
+  .boom {
+    font-size: 12px;
+  }
+
+  /* CAROUSEL ARROWS */
+  .arrow {
+    display: none;
+  }
+
+  /* DOTS */
+  .dots {
+    margin-top: 20px;
+  }
+
+  .dots span {
+    width: 5px;
+    height: 5px;
+    margin: 0 4px;
+  }
+
+  /* ABOUT */
+  .about-section {
+    padding: 60px 20px;
+    background-size: cover;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .about-image {
+    display: none;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+
+  .tra {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .about-btn {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+
+  /* TEAM */
+  .team-section {
+    padding: 50px 20px;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+  }
+
+  .team-card img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .team-card h4 {
+    font-size: 10px;
+    margin-bottom: 4px;
+  }
+
+  .team-card span {
+    font-size: 10px;
+  }
+
+  .tram {
+    font-size: 16px;
+  }
+
+  .tr {
+    font-size: 13px;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding: 40px 20px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-brand {
+    max-width: 100%;
+  }
+
+  .footer-brand p {
+    font-size: 12px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-links h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .footer-links a {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    font-size: 11px;
+  }
+
+  .bottom-links a {
+    margin: 0 5px;
+    display: inline-block;
+  }
+
+  /* CONTACT FORM */
+  .pulse-contact-core {
+    width: 90%;
+    max-width: 100%;
+  }
+
+  .pulse-contact-core h1 {
+    font-size: 28px;
+  }
+
+  .pulse-form-grid input,
+  .pulse-form-grid textarea {
+    font-size: 14px;
+  }
+
+  .pulse-send-btn {
+    padding: 8px 20px;
+    font-size: 12px;
+  }
+}
+
+/* Small Tablets (≤ 600px) */
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px 15px;
+  }
+
+  .xbrv-hyper-links a {
+    font-size: 12px;
+    margin: 0 5px;
+  }
+
+  .hero-content {
+    padding: 0 15px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(22px, 5vw, 36px);
+    margin-bottom: 12px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-card img {
+    height: auto;
+  }
+
+  .section-title {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .tra {
+    font-size: 24px;
+  }
+
+  .gapy {
+    padding: 30px 15px;
+  }
+
+  .texty {
+    font-size: 13px;
+  }
+}
+
+/* Small phones (≤ 480px) */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: clamp(20px, 4vw, 32px);
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  .hero-content p {
+    font-size: 13px;
+  }
+
+  .buttons {
+    gap: 12px;
+  }
+
+  .btn {
+    padding: 10px 15px !important;
+    font-size: 12px;
+    height: auto !important;
+    width: 100% !important;
+  }
+
+  .primary, .secondary {
+    width: 100% !important;
+    height: auto !important;
+    padding: 10px 15px !important;
+  }
+
+  .section {
+    padding: 40px 15px;
+  }
+
+  .card-grid {
+    gap: 15px;
+  }
+
+  .implant-card {
+    padding: 40px 15px;
+  }
+
+  .implant-card img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .tram {
+    font-size: 14px;
+  }
+
+  .glam {
+    font-size: 12px;
+  }
+
+  .boom {
+    font-size: 10px;
+    line-height: 1.4;
+  }
+
+  .section-title {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .about-section {
+    padding: 40px 15px;
+  }
+
+  .tra {
+    font-size: 20px;
+  }
+
+  .about-btn {
+    font-size: 10px;
+    padding: 8px 16px;
+  }
+
+  .team-section {
+    padding: 40px 15px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .team-card img {
+    height: auto;
+  }
+
+  .tr {
+    font-size: 12px;
+  }
+
+  .footer {
+    padding: 30px 15px;
+  }
+
+  .footer-brand p {
+    font-size: 11px;
+  }
+
+  .footer-links {
+    gap: 20px;
+  }
+
+  .footer-links h4 {
+    font-size: 12px;
+  }
+
+  .footer-links a {
+    font-size: 11px;
+    margin-bottom: 6px;
+  }
+
+  .footer-bottom {
+    font-size: 10px;
+    gap: 10px;
+  }
+
+  .bottom-links a {
+    margin: 0 3px;
+    font-size: 10px;
+  }
+
+  .OOO {
+    font-size: 11px;
+  }
+
+  .bruh {
+    font-size: 12px;
+  }
+
+  .wam {
+    font-size: 14px;
+  }
+
+  .pulse-contact-core h1 {
+    font-size: 24px;
+  }
+
+  .pulse-contact-core p {
+    font-size: 12px;
+  }
+
+  .gap {
+    height: 60px;
+  }
+
+  .images {
+    gap: 10px;
+  }
+
+  .images img {
+    max-width: 80px;
+  }
+
+  .void-footer-base {
+    padding: 30px 15px;
+  }
+
+  .void-brand-logo {
+    height: 25px;
+  }
+
+  .void-brand-block p {
+    font-size: 11px;
+  }
+
+  .void-link-galaxy {
+    flex-direction: column;
+    gap: 30px;
+    margin-right: 0;
+  }
+
+  .void-link-cluster a {
+    font-size: 11px;
+  }
+}
+
+
+html, body {
+  overflow-x: hidden;
 }
