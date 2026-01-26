@@ -1,0 +1,716 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Make widths include padding/border to avoid overflow from 100% + padding */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+
+/* END OF RESET CSS, START HEADER */
+
+/* NAVBAR */
+.xbrv-orbit-nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.xbrv-logo-img {
+  height: 48px;
+  width: 178px;
+}
+
+.xbrv-hyper-links{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.xbrv-hyper-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  transition: color 0.3s;
+}
+
+.xbrv-hyper-links a:hover {
+  color: #00ffea;
+}
+
+.abot-us {
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  position: relative;
+  padding-bottom: 8px; /* Gap between text and line */
+  display: inline-block; /* Ensures padding/width works correctly */
+}
+
+
+
+.gap {
+    height: 200px;
+    background: #090A26;
+    border-bottom: 1px solid purple;
+}
+
+.xbrv-auth-btn {
+  background: white;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  border: none;
+  padding: 8px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.xbrv-auth-btn:hover {
+    background: #adadad;
+  color: white;
+}
+
+
+/* HERO */
+.neon-city-shell {
+  height: 100vh;
+  background: url("Images/wallpapersden.com_cyberpunk-2077-hd-poster_1920x1080.jpg") center / cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+    padding: 120px 60px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.neon-city-fog {
+  position: absolute;
+  inset: 0;
+  
+}
+
+.pulse-contact-core {
+  position: relative;
+  z-index: 2;
+  width: 400px;
+  text-align: center;
+  color: white;
+}
+
+.pulse-contact-core h1 {
+  margin-bottom: 10px;
+}
+
+.pulse-contact-core p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  opacity: 0.75;
+}
+
+.pulse-form-grid input,
+.pulse-form-grid textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: none;
+  outline: none;
+}
+
+.pulse-textarea {
+  height: 120px;
+  resize: none;
+}
+
+.pulse-send-btn {
+  background: linear-gradient(90deg, #7f00ff, #e100ff);
+  border: none;
+  padding: 10px 30px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.footer {
+  background: linear-gradient(135deg, #050714, #0b0f2a);
+  color: #bfc4ff;
+  padding: 60px 80px 30px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.footer-brand {
+  max-width: 400px;
+}
+
+.logo {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.socials a {
+  display: inline-block;
+  margin-right: 12px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 80px;
+}
+
+.footer-links h4 {
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.footer-links a {
+  display: block;
+  color: #bfc4ff;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 0, 221, 0.541);
+  margin-top: 40px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.bottom-links a {
+  margin-left: 20px;
+  color: #bfc4ff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+
+.batrum {
+  font-family: Montserrat, sans-serif;
+font-weight: 700;
+font-style: Bold;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0%;
+transition: 0.3s;
+}
+
+.batrum:hover {
+  color: #ffffff;
+}
+
+.batrum12 {
+  font-family: Montserrat, sans-serif;
+font-weight: 700;
+font-style: Bold;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0%;
+}
+
+.OOO {
+  font-family: "Montserrat", sans-serif;
+font-weight: 400;
+font-style: Regular;
+font-size: 12px;
+line-height: 100%;
+letter-spacing: 0%;
+
+}
+
+.bruh {
+  font-family: "Montserrat", sans-serif;
+font-weight: 400;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0%;
+transition: 0.3s;
+}
+
+.bruh:hover {
+  color: #ffffff;
+}
+
+.wam {
+  font-family: "Montserrat", sans-serif;
+font-weight: 700;
+
+font-style: Bold;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+}
+
+
+
+/* END OF RESET CSS, START HEADER */
+
+/* BURGER */
+#nav-toggle { display: none; }
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.burger span {
+  width: 28px;
+  height: 3px;
+  background: white;
+  transition: 0.3s;
+}
+
+
+
+.tech-alliance {
+  padding: 120px 60px;
+  background: radial-gradient(circle at top left, #2c2fff, #0a0f2d 55%, #12002f);
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin-bottom: 70px;
+}
+
+/* CARDS */
+.tech-cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto 70px;
+}
+
+.tech-card {
+  background: linear-gradient(180deg, #0b1430, #060b22);
+  border-radius: 14px;
+  padding: 35px 20px;
+  border: 1px solid rgba(90, 200, 255, 0.35);
+  box-shadow: 0 0 25px rgba(90, 200, 255, 0.2);
+}
+
+.tech-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  border: 1px solid rgba(140, 220, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  color: #8bdcff;
+}
+
+.tech-card h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.tech-card p {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* BUTTONS */
+.tech-actions {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.tech-actions .btn {
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: #001018;
+  transition: 0.3s;
+}
+
+.tech-actions .btn.primary {
+  background: linear-gradient(90deg, #6bdcff, #4fa3ff);
+  transition: 0.3s;
+}
+
+.tech-actions .btn.secondary {
+  background: linear-gradient(90deg, #b56cff, #8e5bff);
+  color: white;
+  transition: 0.3s;
+}
+
+.tech-actions .btn.primary:hover {
+  background: linear-gradient(90deg, #4fa3ff, #6bdcff);
+}
+.tech-actions .btn.secondary:hover {
+  background: linear-gradient(90deg, #8e5bff, #b56cff);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Burger Menu CSS */
+#nav-toggle { display: none; }
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  z-index: 12;
+}
+
+.burger span {
+  width: 28px;
+  height: 3px;
+  background: white;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+#nav-toggle:checked ~ .burger span:nth-child(1) {
+  transform: rotate(45deg) translate(10px, 10px);
+}
+
+#nav-toggle:checked ~ .burger span:nth-child(2) {
+  opacity: 0;
+}
+
+#nav-toggle:checked ~ .burger span:nth-child(3) {
+  transform: rotate(-45deg) translate(8px, -8px);
+}
+
+#nav-toggle:checked ~ .xbrv-hyper-links {
+  display: flex !important;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  background: rgba(9, 10, 38, 0.98);
+  padding: 20px;
+  border-bottom: 2px solid #a020f0;
+  gap: 15px;
+  width: 100%;
+}
+
+#nav-toggle:checked ~ .xbrv-hyper-links a {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#nav-toggle:checked ~ .xbrv-hyper-links a:last-child {
+  border-bottom: none;
+}
+
+/* Tablets (1024px and down) */
+@media (max-width: 1024px) {
+  .xbrv-orbit-nav {
+    padding: 15px 40px;
+  }
+  
+  .xbrv-logo-img {
+    height: 40px;
+    width: 150px;
+  }
+  
+  .xbrv-hyper-links {
+    gap: 15px;
+  }
+  
+  .xbrv-hyper-links a {
+    margin: 0 8px;
+    font-size: 14px;
+  }
+}
+
+/* Mobile - Medium (768px and down) */
+@media (max-width: 768px) {
+  .xbrv-orbit-nav {
+    padding: 12px 30px;
+  }
+  
+  .burger {
+    display: flex;
+  }
+  
+  .xbrv-hyper-links {
+    display: none;
+  }
+  
+  .xbrv-logo-img {
+    height: 35px;
+    width: 130px;
+  }
+  
+  .desktop-auth {
+    display: none;
+  }
+  
+  .neon-city-shell {
+    padding: 60px 20px;
+    min-height: 100vh;
+  }
+  
+  .container {
+    padding: 40px 20px;
+  }
+  
+  .footer {
+    padding: 40px 20px 20px;
+  }
+  
+  .footer-top {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* Mobile - Small (600px and down) */
+@media (max-width: 600px) {
+  .xbrv-orbit-nav {
+    padding: 10px 15px;
+  }
+  
+  .xbrv-logo-img {
+    height: 30px;
+    width: 110px;
+  }
+  
+  .burger span {
+    width: 24px;
+    height: 2px;
+  }
+  
+  .neon-city-shell {
+    padding: 50px 15px;
+  }
+  
+  .container {
+    padding: 30px 15px;
+  }
+  
+  h1, h2 {
+    font-size: 18px;
+  }
+  
+  .footer {
+    padding: 25px 12px 12px;
+  }
+  
+  .footer-brand p {
+    font-size: 12px;
+  }
+  
+  .footer-links h4 {
+    font-size: 13px;
+  }
+  
+  .footer-links a {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+}
+
+/* Mobile - Extra Small (400px and down) */
+@media (max-width: 400px) {
+  .xbrv-orbit-nav {
+    padding: 8px 10px;
+  }
+  
+  .xbrv-logo-img {
+    height: 28px;
+    width: 100px;
+  }
+  
+  .burger span {
+    width: 22px;
+    height: 2px;
+    gap: 3px;
+  }
+  
+  .neon-city-shell {
+    padding: 40px 10px;
+  }
+  
+  .container {
+    padding: 20px 10px;
+  }
+  
+  h1, h2 {
+    font-size: 14px;
+  }
+  
+  .footer {
+    padding: 20px 10px 10px;
+  }
+}
+
+/* ===== RESPONSIVE ADDITIONS (PARTNER) ===== */
+@media (max-width: 1100px) {
+  .tech-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .tech-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tech-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tech-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .tech-card {
+    padding: 24px 16px;
+  }
+
+  .tech-actions {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .tech-actions .btn {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 360px) {
+  .tech-title {
+    font-size: 22px;
+  }
+
+  .tech-card h3 {
+    font-size: 13px;
+  }
+
+  .tech-card p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .tech-title {
+    font-size: 20px;
+  }
+
+  .tech-actions .btn {
+    padding: 12px 18px;
+  }
+}
+
