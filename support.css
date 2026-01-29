@@ -457,119 +457,6 @@ letter-spacing: 0%;
   transition: 0.3s;
 }
 
-/* NAV LINKS RESPONSIVE */
-@media (max-width: 1024px) {
-
-  .xbrv-orbit-nav {
-    padding: 20px 30px;
-    flex-wrap: wrap;
-  }
-
-  .burger {
-    display: flex;
-  }
-
-  .xbrv-hyper-links {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: #090A26;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    padding: 30px 0;
-    display: none;
-    z-index: 9;
-  }
-
-  #nav-toggle:checked ~ .xbrv-hyper-links {
-    display: flex;
-  }
-
-  .xbrv-auth-zone.desktop-auth {
-    display: none;
-  }
-
-  .mobile-auth {
-    display: block;
-    background: white;
-    color: black;
-    font-weight: bold;
-    border: none;
-    padding: 8px 16px;
-    cursor: pointer;
-  }
-}
-
-/* HERO + SUPPORT CARDS RESPONSIVE */
-@media (max-width: 1024px) {
-  .neon-city-shell {
-    padding: 120px 20px 60px;
-  }
-
-  .pulse-contact-core {
-    width: 90%;
-    text-align: center;
-  }
-
-  .support-cards {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-
-  .support-title {
-    font-size: 32px;
-    margin-bottom: 40px;
-  }
-}
-
-/* FOOTER RESPONSIVE */
-@media (max-width: 1024px) {
-  .footer-top {
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .footer-links {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
-
-  .footer-brand p {
-    max-width: 100%;
-  }
-}
-
-
-@media (max-width: 1024px) {
-  .neon-city-shell { padding: 100px 30px 60px; }
-
-  .support-cards {
-    grid-template-columns: 1fr;  /* stack cards vertically */
-    gap: 30px;
-  }
-
-  .support-title { font-size: 32px; margin-bottom: 40px; }
-
-  .support-actions { margin-top: 20px; }
-}
-
-/* EXTREME MOBILE FIX (down to 320px) */
-@media (max-width: 500px) {
-  .neon-city-shell { padding: 80px 20px 40px; }
-  .support-cards { gap: 20px; }
-  .pulse-contact-core { width: 100%; padding: 0 10px; }
-  .btn.submit-btn { max-width: 100%; padding: 12px 20px; font-size: 14px; }
-  .xbrv-orbit-nav { padding: 15px 15px; }
-  .xbrv-logo-img { height: 40px; }
-}
 /* ===== RESPONSIVE DESIGN ===== */
 
 /* Burger Menu CSS */
@@ -626,210 +513,6 @@ letter-spacing: 0%;
   border-bottom: none;
 }
 
-/* Tablets (1024px and down) */
-@media (max-width: 1024px) {
-  .xbrv-orbit-nav {
-    padding: 15px 40px;
-  }
-  
-  .xbrv-logo-img {
-    height: 40px;
-    width: 150px;
-  }
-  
-  .xbrv-hyper-links {
-    gap: 15px;
-  }
-  
-  .xbrv-hyper-links a {
-    margin: 0 8px;
-    font-size: 14px;
-  }
-}
-
-/* Mobile - Medium (768px and down) */
-@media (max-width: 768px) {
-  .xbrv-orbit-nav {
-    padding: 12px 30px;
-  }
-  
-  .burger {
-    display: flex;
-  }
-  
-  .xbrv-hyper-links {
-    display: none;
-  }
-  
-  .xbrv-logo-img {
-    height: 35px;
-    width: 130px;
-  }
-  
-  .desktop-auth {
-    display: none;
-  }
-  
-  .neon-city-shell {
-    padding: 60px 20px;
-    min-height: 100vh;
-  }
-  
-  .container {
-    padding: 40px 20px;
-  }
-  
-  .footer {
-    padding: 40px 20px 20px;
-  }
-  
-  .footer-top {
-    flex-direction: column;
-    gap: 30px;
-  }
-  
-  .footer-links {
-    flex-direction: column;
-    gap: 30px;
-  }
-  
-  .footer-bottom {
-    flex-direction: column;
-    gap: 15px;
-  }
-}
-
-/* Mobile - Small (600px and down) */
-@media (max-width: 600px) {
-  .xbrv-orbit-nav {
-    padding: 10px 15px;
-  }
-  
-  .xbrv-logo-img {
-    height: 30px;
-    width: 110px;
-  }
-  
-  .burger span {
-    width: 24px;
-    height: 2px;
-  }
-  
-  .neon-city-shell {
-    padding: 50px 15px;
-  }
-  
-  .container {
-    padding: 30px 15px;
-  }
-  
-  h1, h2 {
-    font-size: 18px;
-  }
-  
-  .footer {
-    padding: 25px 12px 12px;
-  }
-  
-  .footer-brand p {
-    font-size: 12px;
-  }
-  
-  .footer-links h4 {
-    font-size: 13px;
-  }
-  
-  .footer-links a {
-    font-size: 12px;
-    margin-bottom: 6px;
-  }
-}
-
-/* Mobile - Extra Small (400px and down) */
-@media (max-width: 400px) {
-  .xbrv-orbit-nav {
-    padding: 8px 10px;
-  }
-  
-  .xbrv-logo-img {
-    height: 28px;
-    width: 100px;
-  }
-  
-  .burger span {
-    width: 22px;
-    height: 2px;
-    gap: 3px;
-  }
-  
-  .neon-city-shell {
-    padding: 40px 10px;
-  }
-  
-  .container {
-    padding: 20px 10px;
-  }
-  
-  h1, h2 {
-    font-size: 14px;
-  }
-  
-  .footer {
-    padding: 20px 10px 10px;
-  }
-}
-
-/* ===== RESPONSIVE ADDITIONS (SUPPORT) ===== */
-@media (max-width: 900px) {
-  .support-cards {
-    grid-template-columns: 1fr;
-  }
-
-  .support-actions {
-    flex-direction: column;
-    gap: 16px;
-  }
-}
-
-@media (max-width: 600px) {
-  .support-card {
-    padding: 20px;
-  }
-
-  .support-card h3 {
-    font-size: 16px;
-  }
-
-  .support-title {
-    font-size: 26px;
-  }
-}
-
-@media (max-width: 360px) {
-  .support-title {
-    font-size: 22px;
-  }
-
-  .support-card label {
-    font-size: 12px;
-  }
-
-  .btn {
-    width: 100%;
-  }
-}
-
-@media (max-width: 320px) {
-  .support-card {
-    padding: 16px;
-  }
-
-  .support-card textarea {
-    height: 70px;
-  }
-}
-
-
 /* ===== GLOBAL RESPONSIVE FIXES ===== */
 html, body {
   width: 100%;
@@ -870,13 +553,122 @@ img, svg {
   gap: 10px;
 }
 
+/* ===== LAYOUT BREAKPOINTS ===== */
+@media (max-width: 1024px) {
+  .xbrv-orbit-nav {
+    padding: 16px 36px;
+  }
+
+  .xbrv-logo-img {
+    height: 40px;
+    width: 150px;
+  }
+
+  .neon-city-shell {
+    padding: 100px 30px 60px;
+  }
+
+  .pulse-contact-core {
+    width: 90%;
+  }
+
+  .support-cards {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .support-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .support-actions {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
 @media (max-width: 768px) {
-  .xbrv-auth-zone {
+  .xbrv-orbit-nav {
+    padding: 12px 28px;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .xbrv-hyper-links {
     display: none;
   }
 
-  .footer-brand {
-    max-width: 100%;
+  .desktop-auth {
+    display: none;
+  }
+
+  .neon-city-shell {
+    padding: 70px 24px;
+    min-height: 100vh;
+  }
+
+  .support-actions {
+    margin-top: 30px;
+  }
+
+  .footer {
+    padding: 40px 24px 20px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .xbrv-orbit-nav {
+    padding: 10px 16px;
+  }
+
+  .xbrv-logo-img {
+    height: 32px;
+    width: 118px;
+  }
+
+  .burger span {
+    width: 24px;
+    height: 2px;
+  }
+
+  .neon-city-shell {
+    padding: 60px 16px;
+  }
+
+  .support-card {
+    padding: 20px;
+  }
+
+  .support-card h3 {
+    font-size: 16px;
+  }
+
+  .support-title {
+    font-size: 26px;
+  }
+
+  .footer {
+    padding: 28px 16px 14px;
   }
 }
 
@@ -886,23 +678,39 @@ img, svg {
   }
 
   .xbrv-logo-img {
-    width: 120px;
+    width: 110px;
     height: auto;
   }
 
-  .footer {
-    padding: 24px 12px 12px;
+  .support-card label {
+    font-size: 13px;
   }
 
-  .footer-links {
-    gap: 20px;
+  .support-card input,
+  .support-card textarea {
+    font-size: 13px;
+  }
+
+  .footer-links h4 {
+    font-size: 14px;
+  }
+
+  .footer-links a {
+    font-size: 12px;
   }
 }
 
 @media (max-width: 360px) {
-  .xbrv-hyper-links {
-    padding-left: 12px;
-    padding-right: 12px;
+  .support-title {
+    font-size: 22px;
+  }
+
+  .support-card label {
+    font-size: 12px;
+  }
+
+  .btn {
+    width: 100%;
   }
 
   .footer .logo img {
@@ -921,6 +729,18 @@ img, svg {
 
   .burger span {
     width: 22px;
+  }
+
+  .neon-city-shell {
+    padding: 56px 12px;
+  }
+
+  .support-card {
+    padding: 16px;
+  }
+
+  .support-card textarea {
+    height: 70px;
   }
 
   .footer {
